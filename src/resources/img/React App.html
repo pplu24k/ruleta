@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:3000/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js.descarga"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>html, body{
+  background-image: url(http://localhost:3000/static/media/fieltro.93a5f0ae328eea9b7c5b.png);
+  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+.App{
+  display: flex;
+  flex-direction: column;
+}
+.box-tablero{
+  width: auto;
+  
+  margin: auto;
+  margin-top: 10px;
+ 
+}
+
+.fichas{
+  display: flex;
+  justify-content: center;
+}
+.fichas > div{
+  margin: 5px;
+}
+
+header{
+  background-color: rgb(15, 56, 15);
+  min-height: 12vh;
+  max-height: 15vh;
+  color: white;
+  display: flex;
+  justify-content: space-between
+  
+}
+.titulo-boton{
+position: relative;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;
+}
+
+.banco{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+  width: 20vw;
+}
+
+.datos{
+  width: 20vw;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UseURBQW9EOztFQUVwRCxZQUFZO0VBQ1osU0FBUztFQUNULFVBQVU7RUFDVixhQUFhO0VBQ2Isc0JBQXNCOztBQUV4QjtBQUNBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtBQUN4QjtBQUNBO0VBQ0UsV0FBVzs7RUFFWCxZQUFZO0VBQ1osZ0JBQWdCOztBQUVsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7QUFDekI7QUFDQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGlDQUFpQztFQUNqQyxnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWixhQUFhO0VBQ2I7O0FBRUY7QUFDQTtBQUNBLGtCQUFrQjtBQUNsQixpQkFBaUI7QUFDakIsa0JBQWtCO0FBQ2xCLGFBQWE7QUFDYixzQkFBc0I7QUFDdEI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0FBQ2IiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLCBib2R5e1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4vcmVzb3VyY2VzL2ltZy9maWVsdHJvLnBuZycpO1xuICBcbiAgaGVpZ2h0OiAxMDAlO1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDA7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG5cbn1cbi5BcHB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4uYm94LXRhYmxlcm97XG4gIHdpZHRoOiBhdXRvO1xuICBcbiAgbWFyZ2luOiBhdXRvO1xuICBtYXJnaW4tdG9wOiAxMHB4O1xuIFxufVxuXG4uZmljaGFze1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi5maWNoYXMgPiBkaXZ7XG4gIG1hcmdpbjogNXB4O1xufVxuXG5oZWFkZXJ7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigxNSwgNTYsIDE1KTtcbiAgbWluLWhlaWdodDogMTJ2aDtcbiAgbWF4LWhlaWdodDogMTV2aDtcbiAgY29sb3I6IHdoaXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW5cbiAgXG59XG4udGl0dWxvLWJvdG9ue1xucG9zaXRpb246IHJlbGF0aXZlO1xubWFyZ2luLWxlZnQ6IGF1dG87XG5tYXJnaW4tcmlnaHQ6IGF1dG87XG5kaXNwbGF5OiBmbGV4O1xuZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cblxuLmJhbmNve1xuICBtYXJnaW4tdG9wOiBhdXRvO1xuICBtYXJnaW4tYm90dG9tOiBhdXRvO1xuICBtYXJnaW4tbGVmdDogMTVweDtcbiAgd2lkdGg6IDIwdnc7XG59XG5cbi5kYXRvc3tcbiAgd2lkdGg6IDIwdnc7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.tablero{
+
+    
+    display: grid;
+    grid-template-columns: repeat(14,5vw);
+    grid-template-rows: repeat(5,5vw);
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+    
+    
+}
+.e1-12{
+   grid-column: 2/6;
+}
+.e13-24{
+    grid-column: 6/10;
+}
+.e25-36{
+    grid-column: 10/14;
+}
+.e0{
+    grid-row: 2/5;
+}
+.e1-18{
+    grid-column: 2/4;
+}
+.epar{
+    grid-column: 4/6;
+}
+.ered{
+    grid-column: 6/8;
+}
+.eblack{
+    grid-column:8/10;
+}
+.eimpar{
+    grid-column: 10/12;
+}
+.e19-36{
+    grid-column: 12/14;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9yZXNvdXJjZXMvY3NzL3RhYmxlcm8vdGFibGVyby5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7OztJQUdJLGFBQWE7SUFDYixxQ0FBcUM7SUFDckMsaUNBQWlDO0lBQ2pDLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsbUJBQW1COzs7QUFHdkI7QUFDQTtHQUNHLGdCQUFnQjtBQUNuQjtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEIiLCJzb3VyY2VzQ29udGVudCI6WyIudGFibGVyb3tcclxuXHJcbiAgICBcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgxNCw1dncpO1xyXG4gICAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiByZXBlYXQoNSw1dncpO1xyXG4gICAgYm9yZGVyLXN0eWxlOiBzb2xpZDtcclxuICAgIGJvcmRlci13aWR0aDogMTBweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbiAgICBcclxuICAgIFxyXG59XHJcbi5lMS0xMntcclxuICAgZ3JpZC1jb2x1bW46IDIvNjtcclxufVxyXG4uZTEzLTI0e1xyXG4gICAgZ3JpZC1jb2x1bW46IDYvMTA7XHJcbn1cclxuLmUyNS0zNntcclxuICAgIGdyaWQtY29sdW1uOiAxMC8xNDtcclxufVxyXG4uZTB7XHJcbiAgICBncmlkLXJvdzogMi81O1xyXG59XHJcbi5lMS0xOHtcclxuICAgIGdyaWQtY29sdW1uOiAyLzQ7XHJcbn1cclxuLmVwYXJ7XHJcbiAgICBncmlkLWNvbHVtbjogNC82O1xyXG59XHJcbi5lcmVke1xyXG4gICAgZ3JpZC1jb2x1bW46IDYvODtcclxufVxyXG4uZWJsYWNre1xyXG4gICAgZ3JpZC1jb2x1bW46OC8xMDtcclxufVxyXG4uZWltcGFye1xyXG4gICAgZ3JpZC1jb2x1bW46IDEwLzEyO1xyXG59XHJcbi5lMTktMzZ7XHJcbiAgICBncmlkLWNvbHVtbjogMTIvMTQ7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.recuadro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 0.5em;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
+}
+
+
+.recuadro:hover{
+    box-shadow: inset  500px 0 0 0 #ecff597e;
+    color: white;
+}
+.red{
+    background-color: red;
+    border: 4px outset rgb(201, 78, 78);
+}
+.black{
+    background-color: black;
+    border: 4px outset rgb(39, 39, 39);
+}
+.gray{
+    background-color: rgb(158, 158, 158);
+    border: 4px outset rgb(193, 188, 188);
+}
+.green{
+    background-color: rgb(24, 171, 24);
+    border: 4px outset rgb(91, 196, 91);
+}
+.gray2{
+    background-color: rgb(109, 148, 176);
+    border: 4px outset rgb(100, 134, 158);
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9yZXNvdXJjZXMvY3NzL3RhYmxlcm8vcmVjdWFkcm90YWJsZXJvLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLHNCQUFzQjtJQUN0QixZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLFdBQVc7SUFDWCxZQUFZO0lBQ1osZUFBZTs7QUFFbkI7OztBQUdBO0lBQ0ksd0NBQXdDO0lBQ3hDLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHFCQUFxQjtJQUNyQixtQ0FBbUM7QUFDdkM7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixrQ0FBa0M7QUFDdEM7QUFDQTtJQUNJLG9DQUFvQztJQUNwQyxxQ0FBcUM7QUFDekM7QUFDQTtJQUNJLGtDQUFrQztJQUNsQyxtQ0FBbUM7QUFDdkM7QUFDQTtJQUNJLG9DQUFvQztJQUNwQyxxQ0FBcUM7QUFDekMiLCJzb3VyY2VzQ29udGVudCI6WyIucmVjdWFkcm97XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGZvbnQtc2l6ZTogMC41ZW07XHJcbiAgICB3aWR0aDogYXV0bztcclxuICAgIGhlaWdodDogYXV0bztcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuXHJcbn1cclxuXHJcblxyXG4ucmVjdWFkcm86aG92ZXJ7XHJcbiAgICBib3gtc2hhZG93OiBpbnNldCAgNTAwcHggMCAwIDAgI2VjZmY1OTdlO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG59XHJcbi5yZWR7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7XHJcbiAgICBib3JkZXI6IDRweCBvdXRzZXQgcmdiKDIwMSwgNzgsIDc4KTtcclxufVxyXG4uYmxhY2t7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICAgIGJvcmRlcjogNHB4IG91dHNldCByZ2IoMzksIDM5LCAzOSk7XHJcbn1cclxuLmdyYXl7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTU4LCAxNTgsIDE1OCk7XHJcbiAgICBib3JkZXI6IDRweCBvdXRzZXQgcmdiKDE5MywgMTg4LCAxODgpO1xyXG59XHJcbi5ncmVlbntcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyNCwgMTcxLCAyNCk7XHJcbiAgICBib3JkZXI6IDRweCBvdXRzZXQgcmdiKDkxLCAxOTYsIDkxKTtcclxufVxyXG4uZ3JheTJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTA5LCAxNDgsIDE3Nik7XHJcbiAgICBib3JkZXI6IDRweCBvdXRzZXQgcmdiKDEwMCwgMTM0LCAxNTgpO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.box-ficha{
+border-radius: 50%;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+}
+.ficha-centro{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+.cgreen{
+    background-color: green;
+}
+.cred{
+    background-color: red;
+}
+.cblue{
+    background-color: blue;
+}
+.cviolet{
+    background-color: violet;
+}
+.corange{
+    background-color: orange;
+}
+.selected{
+    padding: 5px;
+    margin-top: 5px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9yZXNvdXJjZXMvY3NzL2ZpY2hhLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBLGtCQUFrQjtBQUNsQixXQUFXO0FBQ1gsWUFBWTtBQUNaLGFBQWE7QUFDYix1QkFBdUI7QUFDdkIsbUJBQW1CO0FBQ25CLGVBQWU7O0FBRWY7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjs7QUFFdEI7QUFDQTtJQUNJLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0kscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLHdCQUF3QjtBQUM1QjtBQUNBO0lBQ0ksd0JBQXdCO0FBQzVCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osZUFBZTtBQUNuQiIsInNvdXJjZXNDb250ZW50IjpbIi5ib3gtZmljaGF7XHJcbmJvcmRlci1yYWRpdXM6IDUwJTtcclxud2lkdGg6IDMwcHg7XHJcbmhlaWdodDogMzBweDtcclxuZGlzcGxheTogZmxleDtcclxuanVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbmFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbmN1cnNvcjogcG9pbnRlcjtcclxuXHJcbn1cclxuLmZpY2hhLWNlbnRyb3tcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIHdpZHRoOiAyNXB4O1xyXG4gICAgaGVpZ2h0OiAyNXB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG5cclxufVxyXG4uY2dyZWVue1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JlZW47XHJcbn1cclxuLmNyZWR7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7XHJcbn1cclxuLmNibHVle1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogYmx1ZTtcclxufVxyXG4uY3Zpb2xldHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHZpb2xldDtcclxufVxyXG4uY29yYW5nZXtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IG9yYW5nZTtcclxufVxyXG4uc2VsZWN0ZWR7XHJcbiAgICBwYWRkaW5nOiA1cHg7XHJcbiAgICBtYXJnaW4tdG9wOiA1cHg7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.box-tirada{
+    background-color: rgb(15, 56, 15);
+    width: 20vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton{
+
+    width: 20vw;
+    height: 10vh;
+    background-color: rgb(1, 0, 9);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 2vw;
+    border-style: solid;
+    border-color: rgb(15, 68, 15);
+    border-width: 5px;
+}
+
+.resultado{
+    margin: auto;
+}
+audio{
+    display: none;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9yZXNvdXJjZXMvY3NzL3RpcmFkYS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQ0FBaUM7SUFDakMsV0FBVztJQUNYLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsb0JBQW9CO0lBQ3BCLFlBQVk7SUFDWiw4QkFBOEI7SUFDOUIsK0JBQStCO0lBQy9CLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7O0FBRUE7O0lBRUksV0FBVztJQUNYLFlBQVk7SUFDWiw4QkFBOEI7SUFDOUIsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxtQkFBbUI7SUFDbkIsNkJBQTZCO0lBQzdCLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGFBQWE7QUFDakIiLCJzb3VyY2VzQ29udGVudCI6WyIuYm94LXRpcmFkYXtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxNSwgNTYsIDE1KTtcclxuICAgIHdpZHRoOiAyMHZ3O1xyXG4gICAgcGFkZGluZy1sZWZ0OiAxNXB4O1xyXG4gICAgcGFkZGluZy1yaWdodDogMTVweDtcclxuICAgIHBhZGRpbmctYm90dG9tOiAxNXB4O1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMTUlO1xyXG4gICAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDE1JTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG59XHJcblxyXG4uYm90b257XHJcblxyXG4gICAgd2lkdGg6IDIwdnc7XHJcbiAgICBoZWlnaHQ6IDEwdmg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMSwgMCwgOSk7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICBmb250LXdlaWdodDogOTAwO1xyXG4gICAgZm9udC1zaXplOiAydnc7XHJcbiAgICBib3JkZXItc3R5bGU6IHNvbGlkO1xyXG4gICAgYm9yZGVyLWNvbG9yOiByZ2IoMTUsIDY4LCAxNSk7XHJcbiAgICBib3JkZXItd2lkdGg6IDVweDtcclxufVxyXG5cclxuLnJlc3VsdGFkb3tcclxuICAgIG1hcmdpbjogYXV0bztcclxufVxyXG5hdWRpb3tcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><header><div class="banco"><div><div><p>Fichas: 15</p></div><div><p>Fichas en juego: 0</p></div></div></div><div class="titulo"><div><h1>Ruleta by pplu24k</h1></div><div></div></div><div class="datos">datos</div></header><div class="box-tirada"><div class="resultado"><h1>Realizar tirada</h1><audio controls=""><source src="/static/media/pitido.b8e8de52d24a408d3c4e.mp3" type="audio/mpeg"></audio><div></div></div><button class="boton">Tirar bola</button></div><div class="box-tablero"><div><div class="tablero"><div num="Posibles ganancias" class="e00 recuadro gray2"><div class="number1">Posibles ganancias</div><div></div></div><div num="1-12" class="e1-12 recuadro gray"><div class="number1">1-12</div><div>0</div></div><div num="13-24" class="e13-24 recuadro gray"><div class="number1">13-24</div><div>0</div></div><div num="25-36" class="e25-36 recuadro gray"><div class="number1">25-36</div><div>0</div></div><div num="ciruclo" class="undefined recuadro gray2"><div class="number1">ciruclo</div><div></div></div><div num="0" class="e0 recuadro green"><div class="number1">0</div><div>0</div></div><div num="3" class="undefined recuadro red"><div class="number1">3</div><div>0</div></div><div num="6" class="undefined recuadro black"><div class="number1">6</div><div>0</div></div><div num="9" class="undefined recuadro red"><div class="number1">9</div><div>0</div></div><div num="12" class="undefined recuadro red"><div class="number1">12</div><div>0</div></div><div num="15" class="undefined recuadro black"><div class="number1">15</div><div>0</div></div><div num="18" class="undefined recuadro red"><div class="number1">18</div><div>0</div></div><div num="21" class="undefined recuadro red"><div class="number1">21</div><div>0</div></div><div num="24" class="undefined recuadro black"><div class="number1">24</div><div>0</div></div><div num="27" class="undefined recuadro red"><div class="number1">27</div><div>0</div></div><div num="30" class="undefined recuadro red"><div class="number1">30</div><div>0</div></div><div num="33" class="undefined recuadro black"><div class="number1">33</div><div>0</div></div><div num="36" class="undefined recuadro red"><div class="number1">36</div><div>0</div></div><div num="2-1" class="undefined recuadro gray"><div class="number1">2-1</div><div>0</div></div><div num="2" class="undefined recuadro black"><div class="number1">2</div><div>0</div></div><div num="5" class="undefined recuadro red"><div class="number1">5</div><div>0</div></div><div num="8" class="undefined recuadro black"><div class="number1">8</div><div>0</div></div><div num="11" class="undefined recuadro black"><div class="number1">11</div><div>0</div></div><div num="14" class="undefined recuadro red"><div class="number1">14</div><div>0</div></div><div num="17" class="undefined recuadro black"><div class="number1">17</div><div>0</div></div><div num="20" class="undefined recuadro black"><div class="number1">20</div><div>0</div></div><div num="23" class="undefined recuadro red"><div class="number1">23</div><div>0</div></div><div num="26" class="undefined recuadro black"><div class="number1">26</div><div>0</div></div><div num="29" class="undefined recuadro black"><div class="number1">29</div><div>0</div></div><div num="32" class="undefined recuadro red"><div class="number1">32</div><div>0</div></div><div num="35" class="undefined recuadro black"><div class="number1">35</div><div>0</div></div><div num="2-1" class="undefined recuadro gray"><div class="number1">2-1</div><div>0</div></div><div num="1" class="undefined recuadro red"><div class="number1">1</div><div>0</div></div><div num="4" class="undefined recuadro black"><div class="number1">4</div><div>0</div></div><div num="7" class="undefined recuadro red"><div class="number1">7</div><div>0</div></div><div num="10" class="undefined recuadro black"><div class="number1">10</div><div>0</div></div><div num="13" class="undefined recuadro black"><div class="number1">13</div><div>0</div></div><div num="16" class="undefined recuadro red"><div class="number1">16</div><div>0</div></div><div num="19" class="undefined recuadro red"><div class="number1">19</div><div>0</div></div><div num="22" class="undefined recuadro black"><div class="number1">22</div><div>0</div></div><div num="25" class="undefined recuadro red"><div class="number1">25</div><div>0</div></div><div num="28" class="undefined recuadro black"><div class="number1">28</div><div>0</div></div><div num="31" class="undefined recuadro black"><div class="number1">31</div><div>0</div></div><div num="34" class="undefined recuadro red"><div class="number1">34</div><div>0</div></div><div class="undefined recuadro gray"><div class="number1"></div><div>0</div></div><div num="BORRAR" class="undefined recuadro gray2"><div class="number1">BORRAR</div><div></div></div><div num="1-18" class="e1-18 recuadro gray"><div class="number1">1-18</div><div>0</div></div><div num="PAR" class="epar recuadro gray"><div class="number1">PAR</div><div>0</div></div><div num="RED" class="ered recuadro gray"><div class="number1">RED</div><div>0</div></div><div num="BLACK" class="eblack recuadro gray"><div class="number1">BLACK</div><div>0</div></div><div num="IMPAR" class="eimpar recuadro gray"><div class="number1">IMPAR</div><div>0</div></div><div num="19-36" class="e19-36 recuadro gray"><div class="number1">19-36</div><div>0</div></div><div num="BORRAR" class="undefined recuadro gray2"><div class="number1">BORRAR</div><div></div></div></div></div></div><div class="fichas"><div class="box-ficha cgreen "><div><div class="ficha-centro">2</div></div></div><div class="box-ficha cblue "><div><div class="ficha-centro">5</div></div></div><div class="box-ficha corange "><div><div class="ficha-centro">10</div></div></div><div class="box-ficha cviolet "><div><div class="ficha-centro">50</div></div></div><div class="box-ficha cred "><div><div class="ficha-centro">100</div></div></div>Ficha seleccionada: 2</div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

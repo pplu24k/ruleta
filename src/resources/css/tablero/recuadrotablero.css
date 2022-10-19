@@ -1,0 +1,38 @@
+.recuadro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 0.5em;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
+}
+
+
+.recuadro:hover{
+    box-shadow: inset  500px 0 0 0 #ecff597e;
+    color: white;
+}
+.red{
+    background-color: red;
+    border: 4px outset rgb(201, 78, 78);
+}
+.black{
+    background-color: black;
+    border: 4px outset rgb(39, 39, 39);
+}
+.gray{
+    background-color: rgb(158, 158, 158);
+    border: 4px outset rgb(193, 188, 188);
+}
+.green{
+    background-color: rgb(24, 171, 24);
+    border: 4px outset rgb(91, 196, 91);
+}
+.gray2{
+    background-color: rgb(109, 148, 176);
+    border: 4px outset rgb(100, 134, 158);
+}

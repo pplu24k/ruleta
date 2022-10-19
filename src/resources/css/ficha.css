@@ -1,0 +1,39 @@
+.box-ficha{
+border-radius: 50%;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+}
+.ficha-centro{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+.cgreen{
+    background-color: green;
+}
+.cred{
+    background-color: red;
+}
+.cblue{
+    background-color: blue;
+}
+.cviolet{
+    background-color: violet;
+}
+.corange{
+    background-color: orange;
+}
+.selected{
+    padding: 5px;
+    margin-top: 5px;
+}

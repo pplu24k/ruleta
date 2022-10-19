@@ -1,0 +1,34 @@
+.box-tirada{
+    background-color: rgb(15, 56, 15);
+    width: 20vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton{
+
+    width: 20vw;
+    height: 10vh;
+    background-color: rgb(1, 0, 9);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 2vw;
+    border-style: solid;
+    border-color: rgb(15, 68, 15);
+    border-width: 5px;
+}
+
+.resultado{
+    margin: auto;
+}
+audio{
+    display: none;
+}

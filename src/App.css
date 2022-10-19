@@ -1,0 +1,57 @@
+html, body{
+  background-image: url('./resources/img/fieltro.png');
+  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+.App{
+  display: flex;
+  flex-direction: column;
+}
+.box-tablero{
+  width: auto;
+  
+  margin: auto;
+  margin-top: 10px;
+ 
+}
+
+.fichas{
+  display: flex;
+  justify-content: center;
+}
+.fichas > div{
+  margin: 5px;
+}
+
+header{
+  background-color: rgb(15, 56, 15);
+  min-height: 12vh;
+  max-height: 15vh;
+  color: white;
+  display: flex;
+  justify-content: space-between
+  
+}
+.titulo-boton{
+position: relative;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;
+}
+
+.banco{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+  width: 20vw;
+}
+
+.datos{
+  width: 20vw;
+}
