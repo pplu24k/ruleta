@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ruleta/static/css/main.9a0341b5.css",
-    "main.js": "/ruleta/static/js/main.99c5defe.js",
+    "main.js": "/ruleta/static/js/main.ac62b04a.js",
     "static/media/fieltro.png": "/ruleta/static/media/fieltro.93a5f0ae328eea9b7c5b.png",
     "static/media/pitido.mp3": "/ruleta/static/media/pitido.b8e8de52d24a408d3c4e.mp3",
     "index.html": "/ruleta/index.html",
     "main.9a0341b5.css.map": "/ruleta/static/css/main.9a0341b5.css.map",
-    "main.99c5defe.js.map": "/ruleta/static/js/main.99c5defe.js.map"
+    "main.ac62b04a.js.map": "/ruleta/static/js/main.ac62b04a.js.map"
   },
   "entrypoints": [
     "static/css/main.9a0341b5.css",
-    "static/js/main.99c5defe.js"
+    "static/js/main.ac62b04a.js"
   ]
 }
