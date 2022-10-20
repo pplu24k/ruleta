@@ -50,13 +50,13 @@ function App() {
 
 
   const pulsarFicha = function(num,setFicha){
-
+    console.log(typeof fichaSeleccionada)
     setFichaSeleccionada(num)
     setFicha(num)
 
   }
 
-  const [fichaSeleccionada, setFichaSeleccionada] = useState(2)
+  const [fichaSeleccionada, setFichaSeleccionada] = useState('2')
   const [fichas,setFichas] = useState(15)
   const [fichasEnJuego,setFichasEnJuego] = useState(0)
   const [fichasColocadas,setFichasColocadas] = useState(new Map())
@@ -259,7 +259,7 @@ useEffect(()=>{
         <Ficha number='10' color='corange' fichasel={fichaSeleccionada} click={pulsarFicha}/>
         <Ficha number='50' color='cviolet' fichasel={fichaSeleccionada} click={pulsarFicha}/>
         <Ficha number='100' color='cred' fichasel={fichaSeleccionada} click={pulsarFicha}/>
-        Ficha seleccionada: {fichaSeleccionada}
+        
       </div>
     </div>
   );
